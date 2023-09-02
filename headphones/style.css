@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-color: #eaeaea;
+}
+
+
+
+.header {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+}
+
+.header__title {
+    font-size: 25px;
+}
+
+.block__likes {
+    border: none;
+    margin-right: 35px;
+}
+
+
+
+.main {
+    max-width: 1600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.headphones {
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.headphones__name {
+    font-size: 20px;
+    line-height: 24px;
+    color: #838383;
+    font-style: normal;
+    margin: 30px 0;
+}
+
+.headphones__card {
+    width: 30%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    min-width: 300px;
+}
+
+.headphones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card__info {
+    padding: 20px;
+}
+
+.card__image {
+    display: inline-block;
+    width: 70%;
+    height: 250px;
+    margin: 0 15%;
+}
+
+.info__text,
+.raiting__num-star,
+.info__rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.raiting__num-star {
+    align-items: center;
+}
+
+.info__rating {
+    margin-top: 25px;
+}
+
+.text__price {
+    color: #FFA542;
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.rating__button {
+    border: none;
+    text-decoration: none;
+    background-color: #ffffffff;
+    color: black;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+
+.footer {
+    background-color: white;
+    width: 78%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__name {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 24px;
+    color: #101010;
+}
+
+.footer__contacts {
+    list-style: none;
+    font-size: 17px;
+    color: #5f5f5f;
+}
+
+.contact__item {
+    margin-bottom: 13px;
+    cursor: pointer;
+}
+
+.conditions__name {
+    font-size: 17px;
+    color: #5f5f5f;
+    cursor: pointer;
+}
+
+.conditions__language {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.language__image{
+    margin-right: 15px;
+    margin-top: 4px;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    align-items: center;
+}
+
+.social__image {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.ru__button,
+.en__button{
+    color: #000000;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+#ru:checked~.ru__button,
+#en:checked~.en__button {
+    color: #FFA542;
+}
+
+#ru:checked~.en__button,
+#en:checked~.ru__button {
+    color: black;
+}
+
+input {
+    display: none;
+}
